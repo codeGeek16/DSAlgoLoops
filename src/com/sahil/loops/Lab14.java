@@ -19,4 +19,4 @@ public class Lab14 {
 }
 
 //time complex = O(n/2)
-//space complexity=O(n/2)
+//space complexity=O(1)
