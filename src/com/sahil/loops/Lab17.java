@@ -2,25 +2,17 @@ package com.sahil.loops;
 
 // Check if number is prime or not
 //prime number is number only divisble by 1 and itself
-//optimised
+//optimised for clean code
 /**
  * @author - sahil.aieee@gmail.com
  */
-public class Lab16 {
+public class Lab17 {
     public static boolean isPrime(int n){
-        int count =0;
         for (int i = 2; i <= n/2; i++) { //as all multiples will be covered till this range
-            if (n % i == 0){
-                count ++;
-                break;
-            }
+            if (n % i == 0)
+                return false;
         }
-        if(count==0){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return true;
     }
 
     public static void main(String[] args) {
@@ -30,5 +22,5 @@ public class Lab16 {
 }
 
 //worst case time complexity = O(n/2)
-//best case time complexity =O(log n) since its in between constant and less than n/2
+//best case time complexity =O(log n) since its in between constant and less than n/2 -> theta of log n
 //space complexity=O(1)
