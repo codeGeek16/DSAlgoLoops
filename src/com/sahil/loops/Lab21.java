@@ -34,5 +34,5 @@ public class Lab21 {
     }
 }
 
-//time complex = O(n/2)
+//time complex = O(n^2)
 //space complexity=O(1)
